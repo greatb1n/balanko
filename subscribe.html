@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BALANKO 구독 서비스</title>
+  <style>
+    body {
+      font-family: 'Noto Sans KR', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f2f4f8;
+    }
+    header {
+      background: linear-gradient(90deg, #0073e6, #00c6ff);
+      color: white;
+      padding: 30px 20px;
+      text-align: center;
+      font-size: 28px;
+      font-weight: bold;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    .container {
+      max-width: 900px;
+      margin: 50px auto;
+      background: white;
+      padding: 40px;
+      border-radius: 16px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+      animation: fadeIn 0.6s ease;
+    }
+    h2 {
+      color: #0073e6;
+      margin-bottom: 16px;
+      font-size: 22px;
+    }
+    p {
+      line-height: 1.7;
+      color: #444;
+      font-size: 16px;
+    }
+    .subscribe-options {
+      margin-top: 40px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .option {
+      flex: 1 1 calc(33% - 20px);
+      min-width: 250px;
+      border: 1px solid #dce3ea;
+      border-left: 6px solid #0073e6;
+      border-radius: 12px;
+      padding: 24px;
+      background: #f9fbfd;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .option:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+    }
+    .option h3 {
+      margin-bottom: 10px;
+      color: #222;
+      font-size: 20px;
+    }
+    .option p {
+      margin: 4px 0;
+    }
+    .btn {
+      background: #0073e6;
+      color: white;
+      border: none;
+      padding: 12px 24px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 16px;
+      margin-top: 10px;
+      transition: background 0.3s ease;
+    }
+    .btn:hover {
+      background: #005dc1;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <header>BALANKO 구독 서비스</header>
+
+  <div class="container">
+    <h2>정기 구독으로 더 편리하게 건강 관리하세요!</h2>
+    <p>BALANKO는 건강 목표에 따라 맞춤 다이어트 식품을 주기적으로 받아볼 수 있도록 도와드립니다. 구독 고객에게는 전용 할인, 레시피 제공, 코칭 메시지 등 다양한 혜택을 드립니다.</p>
+
+    <div class="subscribe-options">
+      <div class="option">
+        <h3>✨ 2주 체험 플랜</h3>
+        <p><strong>₩19,900</strong> (배송비 포함)</p>
+        <p>✅ 처음 시작하는 고객에게 추천</p>
+        <button class="btn">구독 신청</button>
+      </div>
+      <div class="option">
+        <h3>🔥 1개월 집중 플랜</h3>
+        <p><del>₩35,000</del> → <strong>₩31,500</strong> (10% 할인)</p>
+        <p>✅ 체중 감량 목표가 있는 고객에게 추천</p>
+        <button class="btn">구독 신청</button>
+      </div>
+      <div class="option">
+        <h3>💪 3개월 루틴 플랜</h3>
+        <p><del>₩105,000</del> → <strong>₩89,000</strong> (15% 할인)</p>
+        <p>✅ 장기 목표와 습관 개선을 위한 고객에게 추천</p>
+        <button class="btn">구독 신청</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

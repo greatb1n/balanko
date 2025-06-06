@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BALANKO</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Noto Sans KR', sans-serif; background-color: #f9f9f9; }
+
+    .top-banner {
+      background-color: #006644;
+      color: white;
+      text-align: center;
+      padding: 8px 0;
+      font-size: 14px;
+    }
+
+    header {
+      background-color: #ffffff;
+      padding: 20px 40px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid #ddd;
+    }
+    header h1 { color: #0073e6; font-size: 28px; font-weight: 800; letter-spacing: -1px; }
+
+    .nav {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      padding: 15px 0;
+      background-color: #ffffff;
+      border-bottom: 2px solid #e0e0e0;
+      font-size: 16px;
+      position: relative;
+    }
+    .nav-item {
+      position: relative;
+    }
+    .nav a {
+      text-decoration: none;
+      color: #222;
+      font-weight: 600;
+    }
+    .nav a:hover {
+      color: #0073e6;
+    }
+
+    .dropdown {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: white;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      padding: 10px 20px;
+      z-index: 1000;
+      white-space: nowrap;
+    }
+
+    .nav-item:hover .dropdown {
+      display: block;
+    }
+
+    .dropdown a {
+      display: block;
+      padding: 5px 0;
+      color: #333;
+      font-size: 14px;
+      text-decoration: none;
+    }
+    .dropdown a:hover {
+      color: #0073e6;
+    }
+
+    .search-cart {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+    .search-cart input {
+      padding: 6px 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      width: 200px;
+    }
+
+    .hero {
+      background: url('https://images.unsplash.com/photo-1600180758890-bb09ebc5d29f') no-repeat center/cover;
+      height: 100px;
+      color: #ffeb3b;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 32px;
+      font-weight: bold;
+    }
+
+    .section-title {
+      max-width: 1200px;
+      margin: 40px auto 20px;
+      padding: 0 40px;
+      font-size: 22px;
+      font-weight: bold;
+      color: #333;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+      padding: 0 40px 60px;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .product {
+      background: white;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      text-align: center;
+      transition: transform 0.2s ease;
+    }
+    .product:hover {
+      transform: translateY(-5px);
+    }
+    .product img {
+      width: 100%;
+      height: 220px;
+      object-fit: contain;
+      margin-bottom: 10px;
+    }
+    .product-title {
+      font-weight: bold;
+      margin: 10px 0 5px;
+      font-size: 16px;
+    }
+    .product-desc {
+      font-size: 14px;
+      color: #666;
+      margin-bottom: 10px;
+    }
+    .price {
+      font-size: 18px;
+      color: #0073e6;
+      font-weight: bold;
+    }
+    .original-price {
+      font-size: 14px;
+      color: #999;
+      text-decoration: line-through;
+      margin-right: 8px;
+    }
+  </style>
+</head>
+<body>
+  <div class="top-banner">
+    BALANKO 구독시 다양한 할인 프로모션 제공
+  </div>
+
+  <header>
+    <h1>BALANKO</h1>
+    <div class="search-cart">
+      <input type="text" placeholder="검색어 입력">
+      <span>🛒 (0)</span>
+    </div>
+  </header>
+
+  <nav class="nav">
+    <div class="nav-item">
+      <a href="#">다이어트식 구매</a>
+      <div class="dropdown">
+        <a href="#">식사 대용</a>
+        <a href="#">저당 간식</a>
+        <a href="#">지방 커팅</a>
+        <a href="#">단백질 제품</a>
+        <a href="#">클렌즈 주스</a>
+      </div>
+    </div>
+    <div class="nav-item"><a href="subscribe.html">BALANKO 구독</a></div>
+    <div class="nav-item"><a href="#">제품 리뷰</a></div>
+    <div class="nav-item"><a href="#">레시피 공유</a></div>
+    <div class="nav-item"><a href="#">할인 프로모션</a></div>
+  </nav>
+
+  <div class="hero">
+    건강한 라이프스타일을 위한 하루 한 팩, BALANKO
+  </div>
+
+  <div class="section-title">📦 추천 상품</div>
+  <div class="container">
+    <div class="product">
+      <img src="https://dalsim.kr/web/product/big/202504/7ca1dc6b263d1fe3f78dd64ef8c62c0e.png" alt="비타민C">
+      <div class="product-title">휴럼 리포좀 비타민C 3gX30포 1개월분</div>
+      <div class="product-desc">높은 체내 흡수를 위한 리포좀 제형, 비타민C 500mg</div>
+      <div><span class="original-price">29,900원</span><span class="price">22,900원</span></div>
+    </div>
+    <div class="product">
+      <img src="https://godomall.speedycdn.net/899a6b3fb31794d69fd4d73e9e87bdbd/goods/33/image/detail/33_detail_058.jpeg" alt="유나엔">
+      <div class="product-title">[UNA:N] 유나엔 에너지 멀티비타민</div>
+      <div class="product-desc">16 IN 1 미네랄, 초소형 정제로 편안한 복용</div>
+      <div><span class="original-price">20,900원</span><span class="price">19,900원</span></div>
+    </div>
+    <div class="product">
+      <img src="https://cafe24.poxo.com/ec01/hyperflow/YepDBcpQi6F1EGuL9rzRwQWWxX6kFhS7a3ff+/e5spPp7zFt+ZY+6Hdz008NEAaxqWTGboOE9uOYWo1oVvyYGg==/_/web/product/extra/big/202505/5bdf80afe95f10db2130c3d6a9d989e5.jpg" alt="곰피로간건강">
+      <div class="product-title">휴럼 사이언스 곰피로 간건강+ 1개월</div>
+      <div class="product-desc">곰피추출물 + 멀티비타민으로 간 활력 케어</div>
+      <div><span class="original-price">22,900원</span><span class="price">15,900원</span></div>
+    </div>
+  </div>
+</body>
+</html>
