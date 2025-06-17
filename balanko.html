@@ -115,6 +115,19 @@
       max-width: 1200px;
       margin: auto;
     }
+    .subscribe-btn {
+      background-color: #0073e6;
+      color: white;
+      padding: 8px 16px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 600;
+      transition: background 0.3s ease;
+    }
+    .subscribe-btn:hover {
+      background-color: #005bb5;
+    }
     .product {
       background: white;
       border-radius: 12px;
@@ -161,12 +174,16 @@
   </div>
 
   <header>
-    <h1>BALANKO</h1>
+    <div style="display: flex; align-items: center; gap: 20px;">
+      <h1>BALANKO</h1>
+      <a href="subscribe.html" class="subscribe-btn">구독하기</a>
+    </div>
     <div class="search-cart">
       <input type="text" placeholder="검색어 입력">
       <span>🛒 (0)</span>
     </div>
   </header>
+
 
   <nav class="nav">
     <div class="nav-item">
@@ -179,7 +196,6 @@
         <a href="#">클렌즈 주스</a>
       </div>
     </div>
-    <div class="nav-item"><a href="subscribe.html">BALANKO 구독</a></div>
     <div class="nav-item"><a href="plan.html">BALANKO's 플랜</a></div>
     <div class="nav-item"><a href="#">제품 리뷰</a></div>
     <div class="nav-item"><a href="#">레시피 공유</a></div>
@@ -192,6 +208,7 @@
 
   <div class="section-title">📦 추천 상품</div>
   <div class="container">
+
     <div class="product">
       <img src="https://flimeal.com/web/product/big/202503/a2134663357dda108008a5466094305a.jpg" alt="비타민C">
       <div class="product-title">[스타터팩] 플라이밀 단백질 쉐이크</div>
@@ -228,6 +245,7 @@
       <div class="product-desc">하루 2번, 10초로 시작하는 클렌즈 습관</div>
       <div><span class="original-price">39,900원</span><span class="price">27,900원</span></div>
     </div>
+
   </div>
 </body>
 </html>
